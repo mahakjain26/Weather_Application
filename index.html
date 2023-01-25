@@ -7,37 +7,47 @@
     <title>Weather Application</title>
     <link  rel="stylesheet" href="/index.css">
     <script src="/index.js" async></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     
 </head>
 <body>
     <div class="main">
         <section class="input">
             <label>Enter the Location : </label>
-            
             <input type="text" placeholder="Enter any city..." id="inputValue" class="inputValue" >
         </section>
-        <!-- <a href="/index1.html" class="a-Button"><button id="button">Search</button></a> -->
-        <section class="output">  
-            <div id="weather-details">
-            <!-- <i class="material-icons" style="font-size:36px ;margin-top: 10px;" >edit_location</i> -->
-            <div id="city"></div>
-            <div id="currTempature"></div>
-            <div id="max"></div>
-            <div id="currDate"></div>
-            <div id="windDirection"></div>  
-            <div id="windSpeed"></div>      
-        </div> 
         
-        <div class="weather-status">
-            <div id="weather"></div>
-            <div>
-                <img id="img" src="" alt=" "></img>
-            </div>
+        <section class="output"> 
+           
+            <div id="weather-details">
+                <div id="city" ></div>
+                <div id="weather-info">
+                <div id="zone" ></div>
+                <div id="currDate"></div>
+                    <div id="Weather-status">
+                        <img id="img" src="" alt=""></img>
+                    </div>
+                    <div id="weather"></div>
+                </div>
+                
+            </div> 
             
+            
+            
+            
+            <div class="Temperature-status">
+                <div id="currTempature"></div>
+                <div id="max"></div>
+            </div>
+        </section>
+        <div class="wind">
+            <div id="windDirection" class="marginTop"></div>  
+            <div id="windSpeed" class="marginTop"></div>  
+            <div id="humidity" class="marginTop"></div>    
         </div>
-    
-        </div>
-    </section>
+    </div>
 
     
 </body>
